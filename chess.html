@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chess Board</title>
+    <style>
+        .cont{
+            margin-top: 30px;
+            margin-left: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+        }
+        .row{
+            margin-left: 25px;
+            padding-left: 25px;
+            width: fit-content;
+            display: flex;
+            /*border: 5px solid red;*/
+        }
+        .black{
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            background-color: khaki
+        }
+        .white{
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            background-color: peru;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="row">
+            <div class="black"><img src="https://ams03pap001files.storage.live.com/y4m7ksaNiZELIdCgOIkB6SL_6qSC1_m5y-kVl87s0BVNt9iv4nWfLl3ADad_fIgDbJYx0u_H5QTBvSBoEzOFNRyHrbsRrqYF6MSZ0UVt0UETkJnvBjv-SBKcTBZ950evKCN8q45_ESu4dOV3QTOpz87Xj5kFKqUWmDd4IFGq798oihLdmkYxg4kdZQBdjMDjPww?width=60&height=60&cropmode=none" alt="brl"></div>
+            <div class="white"><img src="https://ams03pap001files.storage.live.com/y4myvNqGS4onVTZLO-FvMxyer13fkwxduxcuH6rR5vSCgyjDk5Tb26plkV_yKWFFmwP4OvzUkxjd_7pv4vdX8Cgub_qCgnpTLHEI7pMItQDsweX-HbaiD3EKtlt1RMRRq2Uc7p2_UkQMKBauVGog8fgghKJl1tTjihnDRqDyFRmzrpcvgG-RTsIvt_maB49dO0J?width=60&height=60&cropmode=none" alt="bkl"></div>
+            <div class="black"><img src="https://ams03pap001files.storage.live.com/y4meXNY7Q8AEociuH9UMW6th0ezc2-pcKHCU_ZYkkUSQ3XLlYM_vB2_o7_OPLdAbLfQt2s5dEYG-hrnwKAmWbkZeGjoScTO5nALHlnyY68y_mxtGbAEj5sgx-fodZ9IWbCiEAIeQCbJRpwyPRZVPjEGJuI582gXGomHlynPuSgNmWTBZSBIoOgbxO60uDv3ZgmM?width=60&height=60&cropmode=none" alt="bbl"></div>
+            <div class="white"><img src="https://ams03pap001files.storage.live.com/y4mxyUDl3W-4Fsh4nlHG7OmD-BVgpShGWAOKkw4s7JpkJMoDTWi23WbrBXZZEkaeI_re79LsOnc5vO3PFEjjGz88Dx5IcUEoHDxU8C4rp0tJTlpg-dwpPWDvcxHERewk8bhvbEeZ31kHrP9QmNUww47YOkN48ZVAXCaX0eE5bIsarRVB5B6v88ckFdiWOTQR6j-?width=60&height=60&cropmode=none" alt="bq"></div>
+            <div class="black"><img src="https://ams03pap001files.storage.live.com/y4mTu9jEyAXRbER9hGYWtmHYkLYomqTyJV5qzMba_hzp6CTrUlELZLpWVxKbz8tAP160Aw2tMX5VincSyI2ikauputNnuaLFoC57x8xnsMzzdNG0VPXXEFkVnvEKh2G021RmplrlSSJ_Gq9Ql1YU2kQCWveV3nwxBh-Obafr5S5Lft7MEw4cCuFcuguDkJepN3R?width=60&height=60&cropmode=none" alt="bki"></div>
+            <div class="white"><img src="https://ams03pap001files.storage.live.com/y4meXNY7Q8AEociuH9UMW6th0ezc2-pcKHCU_ZYkkUSQ3XLlYM_vB2_o7_OPLdAbLfQt2s5dEYG-hrnwKAmWbkZeGjoScTO5nALHlnyY68y_mxtGbAEj5sgx-fodZ9IWbCiEAIeQCbJRpwyPRZVPjEGJuI582gXGomHlynPuSgNmWTBZSBIoOgbxO60uDv3ZgmM?width=60&height=60&cropmode=none" alt="bbr"></div>
+            <div class="black"><img src="https://ams03pap001files.storage.live.com/y4myvNqGS4onVTZLO-FvMxyer13fkwxduxcuH6rR5vSCgyjDk5Tb26plkV_yKWFFmwP4OvzUkxjd_7pv4vdX8Cgub_qCgnpTLHEI7pMItQDsweX-HbaiD3EKtlt1RMRRq2Uc7p2_UkQMKBauVGog8fgghKJl1tTjihnDRqDyFRmzrpcvgG-RTsIvt_maB49dO0J?width=60&height=60&cropmode=none" alt="bkr"></div>
+            <div class="white"><img src="https://ams03pap001files.storage.live.com/y4m7ksaNiZELIdCgOIkB6SL_6qSC1_m5y-kVl87s0BVNt9iv4nWfLl3ADad_fIgDbJYx0u_H5QTBvSBoEzOFNRyHrbsRrqYF6MSZ0UVt0UETkJnvBjv-SBKcTBZ950evKCN8q45_ESu4dOV3QTOpz87Xj5kFKqUWmDd4IFGq798oihLdmkYxg4kdZQBdjMDjPww?width=60&height=60&cropmode=none" alt="brr"></div>
+        </div>    
+        <div class="row">
+            <div class="white"><img src="https://ams03pap001files.storage.live.com/y4mOg2mlG_8NU-D6_WeY05fnES-Rg4E65zIvzUnOZc1QErRcAwh9sm1N4ob5mIfaQPSCBUAwIZ2QbSGOYrWjIsTBN65Q59zsVZKY4dUwLLC_aOEyuJCLmUIfwRJGkiGHhS6tDNXHv8W2fcj3MFuLSoAC1rXB1wQ443giCIdeCy4vZXp9hfdR9sv6aqbIcRGxewy?width=60&height=60&cropmode=none" alt="bp"></div>
+            <div class="black"><img src="https://ams03pap001files.storage.live.com/y4mOg2mlG_8NU-D6_WeY05fnES-Rg4E65zIvzUnOZc1QErRcAwh9sm1N4ob5mIfaQPSCBUAwIZ2QbSGOYrWjIsTBN65Q59zsVZKY4dUwLLC_aOEyuJCLmUIfwRJGkiGHhS6tDNXHv8W2fcj3MFuLSoAC1rXB1wQ443giCIdeCy4vZXp9hfdR9sv6aqbIcRGxewy?width=60&height=60&cropmode=none" alt="bp"></div>
+            <div class="white"><img src="https://ams03pap001files.storage.live.com/y4mOg2mlG_8NU-D6_WeY05fnES-Rg4E65zIvzUnOZc1QErRcAwh9sm1N4ob5mIfaQPSCBUAwIZ2QbSGOYrWjIsTBN65Q59zsVZKY4dUwLLC_aOEyuJCLmUIfwRJGkiGHhS6tDNXHv8W2fcj3MFuLSoAC1rXB1wQ443giCIdeCy4vZXp9hfdR9sv6aqbIcRGxewy?width=60&height=60&cropmode=none" alt="bp"></div>
+            <div class="black"><img src="https://ams03pap001files.storage.live.com/y4mOg2mlG_8NU-D6_WeY05fnES-Rg4E65zIvzUnOZc1QErRcAwh9sm1N4ob5mIfaQPSCBUAwIZ2QbSGOYrWjIsTBN65Q59zsVZKY4dUwLLC_aOEyuJCLmUIfwRJGkiGHhS6tDNXHv8W2fcj3MFuLSoAC1rXB1wQ443giCIdeCy4vZXp9hfdR9sv6aqbIcRGxewy?width=60&height=60&cropmode=none" alt="bp"></div>
+            <div class="white"><img src="https://ams03pap001files.storage.live.com/y4mOg2mlG_8NU-D6_WeY05fnES-Rg4E65zIvzUnOZc1QErRcAwh9sm1N4ob5mIfaQPSCBUAwIZ2QbSGOYrWjIsTBN65Q59zsVZKY4dUwLLC_aOEyuJCLmUIfwRJGkiGHhS6tDNXHv8W2fcj3MFuLSoAC1rXB1wQ443giCIdeCy4vZXp9hfdR9sv6aqbIcRGxewy?width=60&height=60&cropmode=none" alt="bp"></div>
+            <div class="black"><img src="https://ams03pap001files.storage.live.com/y4mOg2mlG_8NU-D6_WeY05fnES-Rg4E65zIvzUnOZc1QErRcAwh9sm1N4ob5mIfaQPSCBUAwIZ2QbSGOYrWjIsTBN65Q59zsVZKY4dUwLLC_aOEyuJCLmUIfwRJGkiGHhS6tDNXHv8W2fcj3MFuLSoAC1rXB1wQ443giCIdeCy4vZXp9hfdR9sv6aqbIcRGxewy?width=60&height=60&cropmode=none" alt="bp"></div>
+            <div class="white"><img src="https://ams03pap001files.storage.live.com/y4mOg2mlG_8NU-D6_WeY05fnES-Rg4E65zIvzUnOZc1QErRcAwh9sm1N4ob5mIfaQPSCBUAwIZ2QbSGOYrWjIsTBN65Q59zsVZKY4dUwLLC_aOEyuJCLmUIfwRJGkiGHhS6tDNXHv8W2fcj3MFuLSoAC1rXB1wQ443giCIdeCy4vZXp9hfdR9sv6aqbIcRGxewy?width=60&height=60&cropmode=none" alt="bp"></div>
+            <div class="black"><img src="https://ams03pap001files.storage.live.com/y4mOg2mlG_8NU-D6_WeY05fnES-Rg4E65zIvzUnOZc1QErRcAwh9sm1N4ob5mIfaQPSCBUAwIZ2QbSGOYrWjIsTBN65Q59zsVZKY4dUwLLC_aOEyuJCLmUIfwRJGkiGHhS6tDNXHv8W2fcj3MFuLSoAC1rXB1wQ443giCIdeCy4vZXp9hfdR9sv6aqbIcRGxewy?width=60&height=60&cropmode=none" alt="bp"></div>
+        </div>
+        <div class="row">
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+        </div>
+        <div class="row">
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+        </div>
+        <div class="row">
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+        </div>
+        <div class="row">
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+        </div>
+        <div class="row">
+            <div class="black"><img src="https://ams03pap001files.storage.live.com/y4mtWZk98_MBrHuyv_Oqxc4u3cQU2YgP_3982pFFkQnP9qJmVs7Ab1TBloJ0zWUbYCxkLGve_oVR7Osrb-Pfy2LACuxTOTrDIvanllOnWLRlpor_wnYzuL-ZU01RaVbOyt7jmnT6wTn89_RSjGeQPPrEZDNt65jXi15WnZJd_P46icC56m6QOxORkybxAC5PH2O?width=60&height=60&cropmode=none" alt="wp"></div>
+            <div class="white"><img src="https://ams03pap001files.storage.live.com/y4mtWZk98_MBrHuyv_Oqxc4u3cQU2YgP_3982pFFkQnP9qJmVs7Ab1TBloJ0zWUbYCxkLGve_oVR7Osrb-Pfy2LACuxTOTrDIvanllOnWLRlpor_wnYzuL-ZU01RaVbOyt7jmnT6wTn89_RSjGeQPPrEZDNt65jXi15WnZJd_P46icC56m6QOxORkybxAC5PH2O?width=60&height=60&cropmode=none" alt="wp"></div>
+            <div class="black"><img src="https://ams03pap001files.storage.live.com/y4mtWZk98_MBrHuyv_Oqxc4u3cQU2YgP_3982pFFkQnP9qJmVs7Ab1TBloJ0zWUbYCxkLGve_oVR7Osrb-Pfy2LACuxTOTrDIvanllOnWLRlpor_wnYzuL-ZU01RaVbOyt7jmnT6wTn89_RSjGeQPPrEZDNt65jXi15WnZJd_P46icC56m6QOxORkybxAC5PH2O?width=60&height=60&cropmode=none" alt="wp"></div>
+            <div class="white"><img src="https://ams03pap001files.storage.live.com/y4mtWZk98_MBrHuyv_Oqxc4u3cQU2YgP_3982pFFkQnP9qJmVs7Ab1TBloJ0zWUbYCxkLGve_oVR7Osrb-Pfy2LACuxTOTrDIvanllOnWLRlpor_wnYzuL-ZU01RaVbOyt7jmnT6wTn89_RSjGeQPPrEZDNt65jXi15WnZJd_P46icC56m6QOxORkybxAC5PH2O?width=60&height=60&cropmode=none" alt="wp"></div>
+            <div class="black"><img src="https://ams03pap001files.storage.live.com/y4mtWZk98_MBrHuyv_Oqxc4u3cQU2YgP_3982pFFkQnP9qJmVs7Ab1TBloJ0zWUbYCxkLGve_oVR7Osrb-Pfy2LACuxTOTrDIvanllOnWLRlpor_wnYzuL-ZU01RaVbOyt7jmnT6wTn89_RSjGeQPPrEZDNt65jXi15WnZJd_P46icC56m6QOxORkybxAC5PH2O?width=60&height=60&cropmode=none" alt="wp"></div>
+            <div class="white"><img src="https://ams03pap001files.storage.live.com/y4mtWZk98_MBrHuyv_Oqxc4u3cQU2YgP_3982pFFkQnP9qJmVs7Ab1TBloJ0zWUbYCxkLGve_oVR7Osrb-Pfy2LACuxTOTrDIvanllOnWLRlpor_wnYzuL-ZU01RaVbOyt7jmnT6wTn89_RSjGeQPPrEZDNt65jXi15WnZJd_P46icC56m6QOxORkybxAC5PH2O?width=60&height=60&cropmode=none" alt="wp"></div>
+            <div class="black"><img src="https://ams03pap001files.storage.live.com/y4mtWZk98_MBrHuyv_Oqxc4u3cQU2YgP_3982pFFkQnP9qJmVs7Ab1TBloJ0zWUbYCxkLGve_oVR7Osrb-Pfy2LACuxTOTrDIvanllOnWLRlpor_wnYzuL-ZU01RaVbOyt7jmnT6wTn89_RSjGeQPPrEZDNt65jXi15WnZJd_P46icC56m6QOxORkybxAC5PH2O?width=60&height=60&cropmode=none" alt="wp"></div>
+            <div class="white"><img src="https://ams03pap001files.storage.live.com/y4mtWZk98_MBrHuyv_Oqxc4u3cQU2YgP_3982pFFkQnP9qJmVs7Ab1TBloJ0zWUbYCxkLGve_oVR7Osrb-Pfy2LACuxTOTrDIvanllOnWLRlpor_wnYzuL-ZU01RaVbOyt7jmnT6wTn89_RSjGeQPPrEZDNt65jXi15WnZJd_P46icC56m6QOxORkybxAC5PH2O?width=60&height=60&cropmode=none" alt="wp"></div>
+        </div>
+        <div class="row">
+            <div class="white"><img src="https://ams03pap001files.storage.live.com/y4mwUTxSOPaTiLJZ4lH9ULCOiLQ0BzmIslOx8kpa9QpvRXAQ6D-4iXQj0jvqc7PkyiG3rEKqtlZz9Y9FC_EJ8rq88Ox_YGNn1sCr_LKE3EgmJnyQ5dIKbiLt239XrMSnvWB3MmOaIN3_Zf5EpLOmkChRwpNwNdvutfqZ6-vidfA0jG7-XIHb8oWlaAAzuxTZz4u?width=60&height=60&cropmode=none" alt="wrl"></div>
+            <div class="black"><img src="https://ams03pap001files.storage.live.com/y4mBhq5R9HkDUs3Ada0_BOFlW9cJyczpqyQZh90f1xYkimztWDdeDhDz6wRcUf3BKiI5PVI_GRRtB0ggSPakmQofLfjlchNXOse6iZ3GaQS506gV2q3U3wglPYRaTRKQFOM0Nz38wnEQdZ9x0DJWroQBZaBBhEITT_LbbEe58aGtNVwiRGvX-JJr0ZrKZ8KYx5F?width=60&height=60&cropmode=none" alt="wkl"></div>
+            <div class="white"><img src="https://ams03pap001files.storage.live.com/y4mjG6b5t1oKE9BIjgl6XjJBRaNtiNOtVitm_z0A68VlISdSrnzyh7iAvX0JMVHxQ1gnu9G8MqSRVystg0G2QWDSfXobkCuY8xLcLTg4-BbbQXT6TrFYxSny1sacXDz1SS176bJI6yyCya2LWTwfbCjOPLGIGawgGbRpq9Py0ZNw5DZsexdhrwLqiw2b645erW5?width=60&height=60&cropmode=none" alt="wbl"></div>
+            <div class="black"><img src="https://ams03pap001files.storage.live.com/y4mQzth3kZBxbtHIKrG9NRg_6Vn-idrMNeZ9ODDUMy5aRd9AGvdLdTISdw1jy4phbR6swnDl9DDASPBzQucXfak3sfdnYnGGRtw7_stDBQeY-1mvTzv-r4OX0G68TkMTYy6tw3vDIYfQvQ6MVyZlZO2GZCFG0s6fi3k6PHr72TadYGulMUxLI-LTSGfoyJxASjv?width=60&height=60&cropmode=none" alt="wq"></div>
+            <div class="white"><img src="https://ams03pap001files.storage.live.com/y4mREuV3Ma77tvAo-zSyQe4w7zQW9prDs6immzG3gmM3sIZqzMshuknsuf2ftJKMdg9F8JPPMGZT-HahOcwN4Sa1frfkxz2i-_EDbvrnLjzARFH3MCfo24gG3BEdi3_Uut-94-qpaFciGLdgGuCqoHu5dlf7NnqB4sCh9mLCcd2HDNWQzyzZ971skXk-FUNXMIn?width=60&height=60&cropmode=none" alt="wki"></div>
+            <div class="black"><img src="https://ams03pap001files.storage.live.com/y4mjG6b5t1oKE9BIjgl6XjJBRaNtiNOtVitm_z0A68VlISdSrnzyh7iAvX0JMVHxQ1gnu9G8MqSRVystg0G2QWDSfXobkCuY8xLcLTg4-BbbQXT6TrFYxSny1sacXDz1SS176bJI6yyCya2LWTwfbCjOPLGIGawgGbRpq9Py0ZNw5DZsexdhrwLqiw2b645erW5?width=60&height=60&cropmode=none" alt="wbr"></div>
+            <div class="white"><img src="https://ams03pap001files.storage.live.com/y4mBhq5R9HkDUs3Ada0_BOFlW9cJyczpqyQZh90f1xYkimztWDdeDhDz6wRcUf3BKiI5PVI_GRRtB0ggSPakmQofLfjlchNXOse6iZ3GaQS506gV2q3U3wglPYRaTRKQFOM0Nz38wnEQdZ9x0DJWroQBZaBBhEITT_LbbEe58aGtNVwiRGvX-JJr0ZrKZ8KYx5F?width=60&height=60&cropmode=none" alt="wkr"></div>
+            <div class="black"><img src="https://ams03pap001files.storage.live.com/y4mwUTxSOPaTiLJZ4lH9ULCOiLQ0BzmIslOx8kpa9QpvRXAQ6D-4iXQj0jvqc7PkyiG3rEKqtlZz9Y9FC_EJ8rq88Ox_YGNn1sCr_LKE3EgmJnyQ5dIKbiLt239XrMSnvWB3MmOaIN3_Zf5EpLOmkChRwpNwNdvutfqZ6-vidfA0jG7-XIHb8oWlaAAzuxTZz4u?width=60&height=60&cropmode=none" alt="wrr"></div>
+        </div>
+    </div>
+</body>
+</html>
